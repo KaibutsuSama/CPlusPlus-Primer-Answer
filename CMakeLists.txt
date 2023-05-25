@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.25)
+project(C__Primer)
+
+set(CMAKE_CXX_STANDARD 11)
+
+add_executable(C__Primer main.cpp)
+add_executable(Question1.2 Chapter1/1.2.cpp)
+add_executable(Question1.3 Chapter1/1.3.cpp)
+add_executable(Question1.7 Chapter1/1.7.cpp)
+add_executable(Question1.9 Chapter1/1.9.cpp)
+add_executable(Question1.10 Chapter1/1.10.cpp)
+add_executable(Question1.11 Chapter1/1.11.cpp)
+add_executable(Question1.13 Chapter1/1.13.cpp)
+add_executable(Question1.16 Chapter1/1.16.cpp)
+add_executable(Question1.18 Chapter1/1.18.cpp)

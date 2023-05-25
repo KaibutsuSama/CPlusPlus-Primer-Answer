@@ -1,0 +1,20 @@
+# 忽略CLion配置文件和目录
+/.idea
+/.cxx
+/cmake-build-debug
+/cmake-build-release
+
+# 忽略CLion生成的可执行文件和库文件
+*.exe
+*.dll
+*.so
+
+# 忽略CLion生成的编译中间文件
+*.o
+*.obj
+
+# 忽略CLion自动生成的Makefile文件
+Makefile
+
+# 忽略CLion项目文件
+*.iml
