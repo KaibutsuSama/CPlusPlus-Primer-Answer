@@ -29,3 +29,4 @@ add_executable(Question2.41 Chapter2/2.41.cpp)
 
 add_executable(Question3.2 Chapter3/3.2.cpp)
 add_executable(Question3.4 Chapter3/3.4.cpp)
+add_executable(Question3.5 Chapter3/3.5.cpp)
