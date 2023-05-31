@@ -1,7 +1,9 @@
 #include <iostream>
 
-int main(){
-    std::cout << "2M\n";
-    std::cout << "2\tM\n";
+int main() {
+    int i, &ri = i;
+    i = 5;
+    ri = 10;
+    std::cout << i << ri;
     return 0;
 }

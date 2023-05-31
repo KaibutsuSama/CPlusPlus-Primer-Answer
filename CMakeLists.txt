@@ -4,6 +4,7 @@ project(C__Primer)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(C__Primer main.cpp)
+
 add_executable(Question1.2 Chapter1/1.2.cpp)
 add_executable(Question1.3 Chapter1/1.3.cpp)
 add_executable(Question1.7 Chapter1/1.7.cpp)
@@ -21,3 +22,9 @@ add_executable(Question1.23 Chapter1/1.23.cpp)
 
 add_executable(Question2.4 Chapter2/2.4.cpp)
 add_executable(Question2.8 Chapter2/2.8.cpp)
+add_executable(Question2.18 Chapter2/2.18.cpp)
+add_executable(Question2.34 Chapter2/2.34.cpp)
+add_executable(Question2.40 Chapter2/2.40.cpp)
+add_executable(Question2.41 Chapter2/2.41.cpp)
+
+add_executable(Question3.2 Chapter3/3.2.cpp)
