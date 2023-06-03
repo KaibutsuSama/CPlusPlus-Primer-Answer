@@ -1,22 +1,15 @@
 #include <iostream>
-#include <string>
+#include <vector>
 
-using std::cout;
-using std::cin;
-using std::endl;
-using std::string;
-using std::getline;
+using std::vector;
 
 int main() {
-
-    const string hexdigits = "0123456789ABCDEF";
-    string result;
-    string::size_type n;
-    while(cin >> n){
-        if (n < hexdigits.size()){
-            result += hexdigits[n];
+    vector<unsigned> scores(11, 0);
+    unsigned grade;
+    while (std::cin >> grade && grade != -1) {
+        if(grade <= 100){
+            ++scores[grade / 10];
         }
-        cout << "Your number is: " << result << endl;
     }
     return 0;
 }
