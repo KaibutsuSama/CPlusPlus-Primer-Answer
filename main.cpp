@@ -1,15 +1,12 @@
 #include <iostream>
 #include <vector>
 
-using std::vector;
+using namespace std;
 
 int main() {
-    vector<unsigned> scores(11, 0);
-    unsigned grade;
-    while (std::cin >> grade && grade != -1) {
-        if(grade <= 100){
-            ++scores[grade / 10];
-        }
-    }
+    string s = "some string";
+    string::iterator it;
+    it = s.begin();
+    cout << *it <<  endl;
     return 0;
 }
