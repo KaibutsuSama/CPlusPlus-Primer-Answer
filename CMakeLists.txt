@@ -64,18 +64,18 @@ set(CHAPTER4
         4.3
         4.4)
 
-foreach(Q IN LISTS CHAPTER1)
+foreach (Q IN LISTS CHAPTER1)
     add_executable(Question${Q} Chapter1/${Q}.cpp)
-endforeach()
+endforeach ()
 
-foreach(Q IN LISTS CHAPTER2)
+foreach (Q IN LISTS CHAPTER2)
     add_executable(Question${Q} Chapter2/${Q}.cpp)
-endforeach()
+endforeach ()
 
-foreach(Q IN LISTS CHAPTER3)
+foreach (Q IN LISTS CHAPTER3)
     add_executable(Question${Q} Chapter3/${Q}.cpp)
-endforeach()
+endforeach ()
 
-foreach(Q IN LISTS CHAPTER4)
+foreach (Q IN LISTS CHAPTER4)
     add_executable(Question${Q} Chapter4/${Q}.cpp)
-endforeach()
+endforeach ()
