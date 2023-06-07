@@ -46,4 +46,6 @@ add_executable(Question3.24 Chapter3/3.24.cpp)
 add_executable(Question3.25 Chapter3/3.25.cpp)
 add_executable(Question3.31 Chapter3/3.31.cpp)
 add_executable(Question3.32 Chapter3/3.32.cpp)
+add_executable(Question3.35 Chapter3/3.35.cpp)
+add_executable(Question3.39 Chapter3/3.39.cpp)
 

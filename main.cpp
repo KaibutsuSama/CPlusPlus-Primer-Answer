@@ -1,13 +1,13 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
 int main() {
-    constexpr size_t array_size = 10;
-    int ia[array_size];
-    for (size_t i = 1; i <= array_size; ++i) {
-        ia[i] = i;
+    const char ca[] = {'h','e','l','l','o'};
+    const char *p = ca;
+    while(*p){
+        cout << *p << endl;
+        ++p;
     }
     return 0;
 }
