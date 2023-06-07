@@ -5,53 +5,77 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(C__Primer main.cpp)
 
-add_executable(Question1.2 Chapter1/1.2.cpp)
-add_executable(Question1.3 Chapter1/1.3.cpp)
-add_executable(Question1.7 Chapter1/1.7.cpp)
-add_executable(Question1.9 Chapter1/1.9.cpp)
-add_executable(Question1.10 Chapter1/1.10.cpp)
-add_executable(Question1.11 Chapter1/1.11.cpp)
-add_executable(Question1.13 Chapter1/1.13.cpp)
-add_executable(Question1.16 Chapter1/1.16.cpp)
-add_executable(Question1.18 Chapter1/1.18.cpp)
-add_executable(Question1.19 Chapter1/1.19.cpp)
-add_executable(Question1.20 Chapter1/1.20.cpp)
-add_executable(Question1.21 Chapter1/1.21.cpp)
-add_executable(Question1.22 Chapter1/1.22.cpp)
-add_executable(Question1.23 Chapter1/1.23.cpp)
+set(CHAPTER1
+        1.2
+        1.3
+        1.7
+        1.9
+        1.10
+        1.11
+        1.13
+        1.16
+        1.18
+        1.19
+        1.20
+        1.21
+        1.22
+        1.23)
 
-add_executable(Question2.4 Chapter2/2.4.cpp)
-add_executable(Question2.8 Chapter2/2.8.cpp)
-add_executable(Question2.18 Chapter2/2.18.cpp)
-add_executable(Question2.34 Chapter2/2.34.cpp)
-add_executable(Question2.40 Chapter2/2.40.cpp)
-add_executable(Question2.41 Chapter2/2.41.cpp)
+set(CHAPTER2
+        2.4
+        2.8
+        2.18
+        2.34
+        2.40
+        2.41)
 
-add_executable(Question3.2 Chapter3/3.2.cpp)
-add_executable(Question3.4 Chapter3/3.4.cpp)
-add_executable(Question3.5 Chapter3/3.5.cpp)
-add_executable(Question3.6 Chapter3/3.6.cpp)
-add_executable(Question3.7 Chapter3/3.7.cpp)
-add_executable(Question3.8 Chapter3/3.8.cpp)
-add_executable(Question3.10 Chapter3/3.10.cpp)
-add_executable(Question3.14 Chapter3/3.14.cpp)
-add_executable(Question3.15 Chapter3/3.15.cpp)
-add_executable(Question3.16 Chapter3/3.16.cpp)
-add_executable(Question3.17 Chapter3/3.17.cpp)
-add_executable(Question3.20 Chapter3/3.20.cpp)
-add_executable(Question3.21 Chapter3/3.21.cpp)
-add_executable(Question3.22 Chapter3/3.22.cpp)
-add_executable(Question3.23 Chapter3/3.23.cpp)
-add_executable(Question3.24 Chapter3/3.24.cpp)
-add_executable(Question3.25 Chapter3/3.25.cpp)
-add_executable(Question3.31 Chapter3/3.31.cpp)
-add_executable(Question3.32 Chapter3/3.32.cpp)
-add_executable(Question3.35 Chapter3/3.35.cpp)
-add_executable(Question3.39 Chapter3/3.39.cpp)
-add_executable(Question3.40 Chapter3/3.40.cpp)
-add_executable(Question3.41 Chapter3/3.41.cpp)
-add_executable(Question3.42 Chapter3/3.42.cpp)
-add_executable(Question3.43 Chapter3/3.43.cpp)
-add_executable(Question3.44 Chapter3/3.44.cpp)
-add_executable(Question3.45 Chapter3/3.45.cpp)
+set(CHAPTER3
+        3.2
+        3.4
+        3.5
+        3.6
+        3.7
+        3.8
+        3.10
+        3.14
+        3.15
+        3.16
+        3.17
+        3.20
+        3.21
+        3.22
+        3.23
+        3.24
+        3.25
+        3.31
+        3.32
+        3.35
+        3.39
+        3.40
+        3.41
+        3.42
+        3.43
+        3.44
+        3.45)
 
+set(CHAPTER4
+        4.1
+        4.2
+        4.3
+        4.4)
+
+foreach(Q IN LISTS CHAPTER1)
+    add_executable(Question${Q} Chapter1/${Q}.cpp)
+endforeach()
+
+foreach(Q IN LISTS CHAPTER2)
+    add_executable(Question${Q} Chapter2/${Q}.cpp)
+endforeach()
+
+foreach(Q IN LISTS CHAPTER3)
+    add_executable(Question${Q} Chapter3/${Q}.cpp)
+endforeach()
+
+foreach(Q IN LISTS CHAPTER4)
+    add_executable(Question${Q} Chapter4/${Q}.cpp)
+endforeach()
