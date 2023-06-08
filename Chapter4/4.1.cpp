@@ -1,10 +1,8 @@
 #include <iostream>
+using namespace std;
 
-using std::cout;
-using std::endl;
-
-int main() {
-    int result = 12 / 3 * 4 + 5 * 15 + 24 % 4 / 2;
+int main(){
+    int result = 5 + 10 * 20 / 2;
     cout << result << endl;
     return 0;
 }

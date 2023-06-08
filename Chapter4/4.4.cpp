@@ -1,13 +1,10 @@
 #include <iostream>
-using namespace std;
 
-int main(){
-    short svalue = 32767; ++svalue; // -32768
-    unsigned uivalue = 0; --uivalue;  // 4294967295
-    unsigned short usvalue = 65535; ++usvalue;  // 0
+using std::cout;
+using std::endl;
 
-    cout << svalue << endl;
-    cout << uivalue << endl;
-    cout << usvalue << endl;
+int main() {
+    int result = 12 / 3 * 4 + 5 * 15 + 24 % 4 / 2;
+    cout << result << endl;
     return 0;
 }
