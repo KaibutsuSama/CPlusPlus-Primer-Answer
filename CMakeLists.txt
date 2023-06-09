@@ -69,6 +69,7 @@ set(CHAPTER4
         4.11
         4.13
         4.21
+        4.22
         )
 
 foreach (Q IN LISTS CHAPTER1)
