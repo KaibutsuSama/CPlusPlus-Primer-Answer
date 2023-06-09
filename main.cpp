@@ -1,12 +1,10 @@
-#include <iostream>
-#include <vector>
-
-using namespace std;
-
-#include <iostream>
+#include "shitlang.h"
 
 int main() {
-    int i = 0;
-    cout << i << " " << ++i << endl;
+    蚌 a = 10;
+    典 six = 10;
+    急 j = 0;
+
+    cout << j << endl;
     return 0;
 }

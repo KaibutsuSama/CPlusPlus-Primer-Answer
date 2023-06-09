@@ -66,7 +66,9 @@ set(CHAPTER4
         4.6
         4.7
         4.10
-        4.11)
+        4.11
+        4.13
+        )
 
 foreach (Q IN LISTS CHAPTER1)
     add_executable(Question${Q} Chapter1/${Q}.cpp)
